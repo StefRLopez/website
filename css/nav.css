@@ -1,0 +1,47 @@
+nav {
+    background-color: white;
+    padding: 20px 0 20px 0;
+}
+
+#navbar {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav button {
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: none;
+}
+
+nav button:hover {
+    background-color: darkslategray;
+    color: white;
+}
+
+nav img {
+    display: none;
+}
+
+nav img:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 999px) {
+    #navbar {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav img {
+        display: block;
+        margin: auto;
+    }
+   
+}

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;    
+}
+
+/* Routing */
+#home {
+    background-color: darkslategray;
+    padding: 20px;
+}
+
+#about {
+    display: none;
+}
+
+#blog {
+    display: none;
+}
+
+#services {
+    display: none;
+}
+
+#contact {
+    display: none;
+}
+
+/* HOME NAV */
+#flex-container-home {
+    position: relative; /* Position relativ, um absolute Positionierung des Formulars zu ermöglichen */
+    height: 500px;
+}
+
+#home-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease; /* Übergangseffekt für die Transformation */
+    z-index: 1; /* Sicherstellen, dass das Bild über dem Formular liegt */
+    border-radius: 50%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+    display: none;
+}
+
+@media (min-width: 999px) {
+
+    .contact-form {
+        display: block;
+        position: absolute;
+        left: -100%; /* Initiale Position außerhalb des Sichtbereichs */
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0; /* Unsichtbar machen */
+        transition: transform 0.5s ease, opacity 0.3s ease; /* Übergangseffekte für Sichtbarkeit und Position */
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 0; /* Sicherstellen, dass das Formular hinter dem Bild liegt */
+    }
+
+    /*Hover-Effekt für Container, um das Formular anzuzeigen */
+    #flex-container-home:hover .contact-form {
+        left: 50%;
+        transform: translate(-30%, -50%); /* Formular in den Sichtbereich verschieben */
+        opacity: 1; /* Sichtbar machen */
+    }
+}
+
+/* CONTACT NAV */
+.contact-form-fix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

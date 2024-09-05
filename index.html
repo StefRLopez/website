@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>Own Website</title>
+</head>
+
+<body>
+    <nav>
+        <div id="burger-menu">
+            <img id="burger-menu" src="media/menu-black.png" alt="burger menu" style="height: 50px">
+        </div>
+        <ul id="navbar">
+            <li><button id="home-button">Home</button></li>
+            <li><button id="about-button">About</button></li>
+            <li><button id="blog-button">Blog</button></li>
+            <li><button id="services-button">Services</button></li>
+            <li><button id="contact-button">Contact</button></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="home">
+            <div id="flex-container-home">
+                <img id="home-image" src="media/SRL.png" alt="home-image" style="height: 300px;">
+                <div class="contact-form">
+                    <form>
+                        <h2>Kontaktieren Sie mich</h2>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                        <label for="email">E-Mail:</label>
+                        <input type="email" id="email" name="email">
+                        <label for="nachricht">Nachricht:</label>
+                        <textarea id="nachricht" name="nachricht"></textarea>
+                        <button type="submit">Senden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <h1>ABOUT</h1>
+        </div>
+        <div id="blog">
+            <h1>BLOG</h1>
+        </div>
+        <div id="services">
+            <h1>SERVICES</h1>
+        </div>
+        <div id="contact">
+            <div class="contact-form-fix">
+                <form>
+                    <h2>Kontaktieren Sie mich</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="nachricht">Nachricht:</label>
+                    <textarea id="nachricht" name="nachricht"></textarea>
+                    <button type="submit">Senden</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
