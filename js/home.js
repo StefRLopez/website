@@ -13,5 +13,3 @@ function slideIn(){
 function slideOut(){
     document.getElementById("home-image").style.transform = 'translate(-50%, -50%)';
 }
-
-

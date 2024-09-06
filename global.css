@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: white;    
+    background-color: blue;    
 }
 
 /* Routing */
@@ -44,10 +44,6 @@ body {
     z-index: 1; /* Sicherstellen, dass das Bild über dem Formular liegt */
     border-radius: 50%;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
-
-.contact-form {
-    display: none;
 }
 
 @media (min-width: 999px) {
